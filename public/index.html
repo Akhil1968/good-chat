@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Speak good or remain silent </title>
+  <title>Lets Chat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="/css/bootstrap.css" rel="stylesheet">
@@ -11,14 +11,14 @@
 <body>
  <!--  nickname page  -->
  <div id="nickPage" class="" align="center">
-   <img height="300" width="300" class="img-circle" src="/images/minion.jpg"/>
-     <h3>Pick your super awesome nickname</h3>
+   <img height="300" width="300" class="img-circle" src="/images/mickymouse.jpg"/>
+     <h3>Name your avatar</h3>
    <p id="nickError"></p>
    <div class="form-group">
    <form id="nickForm" >
      <input id="nickname" type="text" autofocus required 
             placeholder="Your nickname" />
-     <input class="btn btn-danger" type="submit" value="Submit"/>
+     <input class="btn btn-success" type="submit" value="Submit"/>
    </form>
  </div>
 </div>
@@ -30,7 +30,7 @@
         <div class="panel-body">
            <div id="contentWrap" >
               <div id="chatWrap" style=" border-radius: 10px;
-                  background: #F0E0B0;background: url(/images/wood.jpg);min-height: 400;max-height: 400;overflow-y: scroll;">
+                  background: #F0E0B0;min-height: 400;max-height: 400;overflow-y: scroll;">
                   <div id="chat"></div>
               </div>
            </div>
@@ -43,16 +43,23 @@
            <textarea required autofocus style="background-color:#ffffe6;border:double 4px orange;border-radius: 0.5em;" 
               rows="2" cols="40" 
              id="message" placeholder="Write your message and press enter.."></textarea>
-             <code>@john  Hello</code> to say Hello to john privately
+             <code>@mohan  Hello</code> to say Hello to mohan privately
           </div>
        </form>
      </div>
     <!-- Currenty Online  -->
-    <div class="col-md-3 col-sm-offset-0 panel panel-default">
-      <div class="panel-heading">Currently Online</div>
-       <div class="panel-body">
+    <div class="col-md-3 col-sm-offset-0">
+      <div class="well text-muted small"> Online Users
+        <div class="text-success small lead ">
           <div  id="users"></div>
+        </div>
       </div>
+    </div>
+    <div class="col-md-3 col-sm-offset-0 ">
+      <div class="well ">
+        <div class="text-muted small">Created by: Akhilanand Singh</div>
+          <code>akhilanandsingh@gmail.com</code>
+       </div>
     </div>
 </div> <!--div id="chatWindow" -->
 
